@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		BFB286571BB1831D009E852E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB286561BB1831D009E852E /* AppDelegate.swift */; };
-		BFB286591BB1831D009E852E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB286581BB1831D009E852E /* MasterViewController.swift */; };
-		BFB2865B1BB1831D009E852E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2865A1BB1831D009E852E /* DetailViewController.swift */; };
 		BFB2865E1BB1831D009E852E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB2865C1BB1831D009E852E /* Main.storyboard */; };
 		BFB286601BB1831D009E852E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB2865F1BB1831D009E852E /* Assets.xcassets */; };
 		BFB286631BB1831D009E852E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB286611BB1831D009E852E /* LaunchScreen.storyboard */; };
 		BFB2866E1BB1831D009E852E /* GithubSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2866D1BB1831D009E852E /* GithubSearchTests.swift */; };
 		BFB286791BB1831D009E852E /* GithubSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB286781BB1831D009E852E /* GithubSearchUITests.swift */; };
+		BFB286871BB18394009E852E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB286861BB18394009E852E /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BFB286891BB18521009E852E /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB286881BB18521009E852E /* RepositoryCell.swift */; settings = {ASSET_TAGS = (); }; };
+		BFB2868B1BB18548009E852E /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB2868A1BB18548009E852E /* RepositoryCell.xib */; settings = {ASSET_TAGS = (); }; };
+		BFB2868D1BB185D6009E852E /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2868C1BB185D6009E852E /* RepositoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BFB2868F1BB185F3009E852E /* SearchRepositoriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2868E1BB185F3009E852E /* SearchRepositoriesManager.swift */; settings = {ASSET_TAGS = (); }; };
+		BFB286911BB1862D009E852E /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB286901BB1862D009E852E /* Github.swift */; settings = {ASSET_TAGS = (); }; };
+		BFB286931BB18650009E852E /* ApplicationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB286921BB18650009E852E /* ApplicationContext.swift */; settings = {ASSET_TAGS = (); }; };
+		BFB286971BB19301009E852E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB286961BB19301009E852E /* ArrayExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		CC8F398BD92D1C58A2A39070 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DD39DC462F72F91D1D320B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73DA74F54F8E95A8717C2F52 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		86DD39DC462F72F91D1D320B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB286531BB1831D009E852E /* GithubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB286561BB1831D009E852E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFB286581BB1831D009E852E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		BFB2865A1BB1831D009E852E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BFB2865D1BB1831D009E852E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFB2865F1BB1831D009E852E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB286621BB1831D009E852E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		BFB286741BB1831D009E852E /* GithubSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB286781BB1831D009E852E /* GithubSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchUITests.swift; sourceTree = "<group>"; };
 		BFB2867A1BB1831D009E852E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB286861BB18394009E852E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BFB286881BB18521009E852E /* RepositoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		BFB2868A1BB18548009E852E /* RepositoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
+		BFB2868C1BB185D6009E852E /* RepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryViewController.swift; sourceTree = "<group>"; };
+		BFB2868E1BB185F3009E852E /* SearchRepositoriesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesManager.swift; sourceTree = "<group>"; };
+		BFB286901BB1862D009E852E /* Github.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Github.swift; sourceTree = "<group>"; };
+		BFB286921BB18650009E852E /* ApplicationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationContext.swift; sourceTree = "<group>"; };
+		BFB286961BB19301009E852E /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		CA502D0DEEC0D7E8FB6EDECD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8F398BD92D1C58A2A39070 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035D1090E25DFC146F974123 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73DA74F54F8E95A8717C2F52 /* Pods.debug.xcconfig */,
+				CA502D0DEEC0D7E8FB6EDECD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80AF5AF58B688447EC760FB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86DD39DC462F72F91D1D320B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFB2864A1BB1831D009E852E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +117,8 @@
 				BFB2866C1BB1831D009E852E /* GithubSearchTests */,
 				BFB286771BB1831D009E852E /* GithubSearchUITests */,
 				BFB286541BB1831D009E852E /* Products */,
+				035D1090E25DFC146F974123 /* Pods */,
+				80AF5AF58B688447EC760FB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +135,14 @@
 		BFB286551BB1831D009E852E /* GithubSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BFB286951BB192F1009E852E /* Extension */,
+				BFB286941BB192D6009E852E /* Cell */,
 				BFB286561BB1831D009E852E /* AppDelegate.swift */,
-				BFB286581BB1831D009E852E /* MasterViewController.swift */,
-				BFB2865A1BB1831D009E852E /* DetailViewController.swift */,
+				BFB286921BB18650009E852E /* ApplicationContext.swift */,
+				BFB286901BB1862D009E852E /* Github.swift */,
+				BFB2868E1BB185F3009E852E /* SearchRepositoriesManager.swift */,
+				BFB286861BB18394009E852E /* SearchViewController.swift */,
+				BFB2868C1BB185D6009E852E /* RepositoryViewController.swift */,
 				BFB2865C1BB1831D009E852E /* Main.storyboard */,
 				BFB2865F1BB1831D009E852E /* Assets.xcassets */,
 				BFB286611BB1831D009E852E /* LaunchScreen.storyboard */,
@@ -128,6 +169,23 @@
 			path = GithubSearchUITests;
 			sourceTree = "<group>";
 		};
+		BFB286941BB192D6009E852E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BFB286881BB18521009E852E /* RepositoryCell.swift */,
+				BFB2868A1BB18548009E852E /* RepositoryCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		BFB286951BB192F1009E852E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BFB286961BB19301009E852E /* ArrayExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFB2867D1BB1831D009E852E /* Build configuration list for PBXNativeTarget "GithubSearch" */;
 			buildPhases = (
+				4DBB46B8275822ABBB3B46E6 /* Check Pods Manifest.lock */,
 				BFB2864F1BB1831D009E852E /* Sources */,
 				BFB286501BB1831D009E852E /* Frameworks */,
 				BFB286511BB1831D009E852E /* Resources */,
+				8225E24E5FB703A3BEF4A5E0 /* Embed Pods Frameworks */,
+				BC36A72E6C57CD8A6C7CC191 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +295,7 @@
 				BFB286631BB1831D009E852E /* LaunchScreen.storyboard in Resources */,
 				BFB286601BB1831D009E852E /* Assets.xcassets in Resources */,
 				BFB2865E1BB1831D009E852E /* Main.storyboard in Resources */,
+				BFB2868B1BB18548009E852E /* RepositoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +315,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DBB46B8275822ABBB3B46E6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8225E24E5FB703A3BEF4A5E0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC36A72E6C57CD8A6C7CC191 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFB2864F1BB1831D009E852E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB2865B1BB1831D009E852E /* DetailViewController.swift in Sources */,
-				BFB286591BB1831D009E852E /* MasterViewController.swift in Sources */,
+				BFB286911BB1862D009E852E /* Github.swift in Sources */,
+				BFB2868D1BB185D6009E852E /* RepositoryViewController.swift in Sources */,
+				BFB286931BB18650009E852E /* ApplicationContext.swift in Sources */,
+				BFB286971BB19301009E852E /* ArrayExtension.swift in Sources */,
+				BFB286891BB18521009E852E /* RepositoryCell.swift in Sources */,
+				BFB286871BB18394009E852E /* SearchViewController.swift in Sources */,
+				BFB2868F1BB185F3009E852E /* SearchRepositoriesManager.swift in Sources */,
 				BFB286571BB1831D009E852E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +513,7 @@
 		};
 		BFB2867E1BB1831D009E852E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DA74F54F8E95A8717C2F52 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GithubSearch/Info.plist;
@@ -409,6 +525,7 @@
 		};
 		BFB2867F1BB1831D009E852E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA502D0DEEC0D7E8FB6EDECD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GithubSearch/Info.plist;
@@ -485,6 +602,7 @@
 				BFB2867F1BB1831D009E852E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFB286801BB1831D009E852E /* Build configuration list for PBXNativeTarget "GithubSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +611,7 @@
 				BFB286821BB1831D009E852E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFB286831BB1831D009E852E /* Build configuration list for PBXNativeTarget "GithubSearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +620,7 @@
 				BFB286851BB1831D009E852E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
